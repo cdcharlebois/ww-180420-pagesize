@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="PageSize.widget.PageSizeContext" needsEntityContext="true" xmlns="http://www.mendix.com/widget/1.0/">
+    <name>PageSize Context</name>
+    <description>The description of this widget.</description>
+
+    <icon />
+
+    <properties>
+        <property key="target" type="string" required="true">
+          <caption>Target</caption>
+          <category>General</category>
+          <description>The Mendix name of the grid to attach to.</description>
+        </property>
+        <property key="attribute" type="attribute" isPath="optional" pathType="reference" required="true">
+          <caption>Attribute</caption>
+          <category>General</category>
+          <description></description>
+          <attributeTypes>
+            <attributeType name="Integer" />
+          </attributeTypes>
+        </property>
+        <property key="options" type="object" isList="true" required="true">
+          <caption>Options</caption>
+          <category>General</category>
+          <description>The list of display options</description>
+          <properties>
+            <property key="rows" type="integer" defaultValue="3" required="true">
+             <caption>Number of Rows</caption>
+              <category>General</category>
+              <description></description>
+            </property>
+            <property key="caption" type="string" required="false">
+              <caption>Caption</caption>
+              <category>General</category>
+              <description></description>
+            </property>
+            <property key="isDefault" type="boolean" defaultValue="false">
+              <caption>Default?</caption>
+              <category>General</category>
+              <description></description>
+            </property>
+          </properties>
+        </property>
+    </properties>
+</widget>
